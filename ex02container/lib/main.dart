@@ -13,7 +13,175 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Ex11Cu(),
+      home:
+    );
+  }
+}
+
+class Ex12Widget extends StatelessWidget {
+  const Ex12Widget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('더보기'),
+        actions: [
+          Icon(Icons.add),
+          SizedBox(
+            width: 20,
+          ),
+          Icon(Icons.settings),
+          SizedBox(
+            width: 20,
+          )
+        ],
+        leading: Icon(Icons.menu),
+      ),
+      body: SafeArea(
+        child: Column(
+          children: [
+            Container(
+              width: double.infinity,
+              height: 80,
+              margin: EdgeInsets.all(8),
+              padding: EdgeInsets.all(24),
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                  color: Colors.grey[100]),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    '박*호님',
+                    style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+                  ),
+                  Container(
+                    child: Row(
+                      children: [
+                        Text(
+                          'Friend ',
+                          style: TextStyle(
+                              fontSize: 16,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.purple),
+                        ),
+                        Text(
+                          '155p',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold),
+                        )
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            SizedBox(
+              width: double.infinity,
+              height: 30,
+            ),
+            Container(
+              width: double.infinity,
+              height: 80,
+              margin: EdgeInsets.all(8),
+              padding: EdgeInsets.all(24),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  Text(
+                    '서비스',
+                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                  ),
+                ],
+              ),
+            ),
+            Container(
+              width: double.infinity,
+              margin: EdgeInsets.all(8),
+              padding: EdgeInsets.all(24),
+              child: Row(
+                children: [
+                  Column(
+                    children: [
+                      Stack(
+                        children: [
+                          Icon(
+                            Icons.copyright,
+                            size: 50,
+                          ),
+                          // Positioned : 스택 내에서 이동할 수 있게 해줌
+                          Positioned(
+                            bottom: 3,
+                            right: 3,
+                            child: Container(
+                              alignment: Alignment.center,
+                              width: 15,
+                              height: 15,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(3),
+                                color: Colors.pinkAccent,
+                              ),
+                              child: Text(
+                                'N',
+                                style: TextStyle(
+                                    color: Colors.white, fontSize: 12),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                      Text(
+                        '포인트 충전소',
+                        style: TextStyle(
+                            fontSize: 12, fontWeight: FontWeight.bold),
+                      )
+                    ],
+                  ),
+                  SizedBox(
+                    width: 20,
+                  ),
+                  Column(
+                    children: [
+                      Stack(
+                        children: [
+                          Icon(
+                            Icons.chat,
+                            size: 50,
+                          ),
+                          Positioned(
+                            bottom: 3,
+                            right: 3,
+                            child: Container(
+                              alignment: Alignment.center,
+                              width: 15,
+                              height: 15,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(3),
+                                color: Colors.pinkAccent,
+                              ),
+                              child: Text(
+                                'N',
+                                style: TextStyle(
+                                    color: Colors.white, fontSize: 12),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                      Text(
+                        '상담하기',
+                        style: TextStyle(
+                            fontSize: 12, fontWeight: FontWeight.bold),
+                      )
+                    ],
+                  ),
+                ],
+              ),
+            )
+          ],
+        ),
+      ),
     );
   }
 }
@@ -27,17 +195,20 @@ class Ex11Cu extends StatelessWidget {
       appBar: AppBar(
         title: Text('더보기'),
         actions: [
-          Icon(Icons.account_circle),
-          SizedBox(width: 20,),
+          Icon(Icons.add),
+          SizedBox(
+            width: 20,
+          ),
           Icon(Icons.settings),
-          SizedBox(width: 20,)
+          SizedBox(
+            width: 20,
+          )
         ],
         leading: Icon(Icons.menu),
       ),
     );
   }
 }
-
 
 class Ex10StackIcon extends StatelessWidget {
   const Ex10StackIcon({super.key});
