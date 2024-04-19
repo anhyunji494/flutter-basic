@@ -1,3 +1,5 @@
+import 'package:ex04setting/ex_animated.dart';
+import 'package:ex04setting/ex_onboarding.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
@@ -11,7 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Ex01Toast(),
+      home: Ex03Onboarding(),
     );
   }
 }
