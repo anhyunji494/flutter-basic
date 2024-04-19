@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_class/ex_checkBox.dart';
+import 'package:flutter_class/ex_radio.dart';
+import 'package:flutter_class/ex_switch.dart';
+import 'package:flutter_class/ex_textfield.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,7 +15,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-            home: Ex03Check()
+            home: Ex07Login()
     );
   }
 }
