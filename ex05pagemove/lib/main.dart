@@ -1,5 +1,6 @@
 import 'package:ex05pagemove/config/route_name.dart';
 import 'package:ex05pagemove/screen/ex_blue_page.dart';
+import 'package:ex05pagemove/screen/ex_bottom.dart';
 import 'package:ex05pagemove/screen/ex_green_page.dart';
 import 'package:ex05pagemove/screen/ex_red_page.dart';
 import 'package:ex05pagemove/screen/login_page.dart';
@@ -27,7 +28,7 @@ class MyApp extends StatelessWidget {
 
       routes: name,
 
-      home: ExLogin(),
+      home: ExBottom(),
     );
   }
 }
